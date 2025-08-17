@@ -12,7 +12,7 @@ Uma landing page brasileira otimizada para conversão com três planos de assina
 
 2. **Configurações de build**:
    - Build command: `npm run build`
-   - Publish directory: `dist`
+   - Publish directory: `client`,`dist`
    - Node version: `18`
 
 3. **Configuração automática**:
