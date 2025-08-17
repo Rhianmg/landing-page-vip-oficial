@@ -94,6 +94,7 @@ export default function Home() {
             <PricingCard
               type="basic"
               title="Espadinha"
+              subtitle="Primeiro Contato • Entrada"
               price="R$9,90"
               features={basicFeatures}
               buttonText="Quero o acesso básico"
@@ -103,6 +104,7 @@ export default function Home() {
             <PricingCard
               type="intermediate"
               title="Flerte Quente"
+              subtitle="Experiência Completa • Popular"
               price="R$14,90"
               features={intermediateFeatures}
               buttonText="Quero o plano completo"
