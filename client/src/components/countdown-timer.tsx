@@ -28,7 +28,7 @@ export function CountdownTimer() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-center text-center">
           <div className="flex items-center space-x-3">
-            <Flame className="text-yellow-400 text-xl animate-pulse" />
+            <Flame className="text-yellow-400 h-6 w-6 animate-pulse" />
             <span className="text-white font-bold text-lg">ÚLTIMA CHANCE!</span>
             <div className="bg-red-800 px-3 py-1 rounded-lg border border-red-500">
               <span className="text-yellow-400 font-bold text-sm">Expira em: </span>
