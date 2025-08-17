@@ -78,7 +78,7 @@ export default function Home() {
               Última Chance: Desbloqueie o Acesso VIP 
               <span className="text-yellow-400"> com Ela por Apenas</span>
             </h1>
-            <div className="text-6xl md:text-8xl font-extrabold text-yellow-400 mb-6">
+            <div className="text-4xl md:text-6xl font-extrabold text-yellow-400 mb-6">
               R$9,90!
             </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-4">
