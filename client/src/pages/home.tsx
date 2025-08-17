@@ -74,18 +74,10 @@ export default function Home() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                🔥 Isso é só uma <span className="text-yellow-400">prévia</span> do que te espera... 🔥
-              </h2>
-              <p className="text-xl text-gray-300 mb-2">
-                😈 Conteúdo <span className="text-red-400 font-bold">sem limites</span> e <span className="text-yellow-400 font-bold">totalmente liberado</span> 😈
-              </p>
-              <p className="text-lg text-[#d1d5db]">
-                💋 Entre agora e descubra por que milhares estão viciados... 💋
-              </p>
-            </div>
-            <div className="relative bg-gradient-to-r from-yellow-600/20 to-red-600/20 p-6 rounded-2xl border-2 border-yellow-400/50 shadow-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+              🔥 Isso é só uma <span className="text-yellow-400">prévia</span> do que te espera... 🔥
+            </h2>
+            <div className="relative bg-gradient-to-r from-yellow-600/20 to-red-600/20 p-6 rounded-2xl border-2 border-yellow-400/50 shadow-2xl mx-auto mb-8">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-red-400/10 rounded-2xl blur-sm"></div>
               <div className="relative">
                 <img
@@ -94,6 +86,14 @@ export default function Home() {
                   className="w-full h-96 object-cover rounded-xl shadow-lg mx-auto"
                 />
               </div>
+            </div>
+            <div className="space-y-4">
+              <p className="text-xl text-gray-300">
+                😈 Conteúdo <span className="text-red-400 font-bold">sem limites</span> e <span className="text-yellow-400 font-bold">totalmente liberado</span> 😈
+              </p>
+              <p className="text-lg text-gray-400">
+                💋 Entre agora e descubra por que milhares estão viciados... 💋
+              </p>
             </div>
           </div>
         </div>
