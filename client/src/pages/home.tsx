@@ -4,7 +4,7 @@ import { CountdownTimer } from "@/components/countdown-timer";
 import { PricingCard } from "@/components/pricing-card";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
-import featuredImage from "@assets/GE5A23UX0AE7JNw_1755393526704.jpg";
+import featuredImage from "@assets/GLNQ9zTXIAA2_y3.jpg";
 
 export default function Home() {
   const { toast } = useToast();
@@ -63,10 +63,8 @@ export default function Home() {
     <div className="font-sans overflow-x-hidden">
       {/* Background Gradient */}
       <div className="fixed inset-0 bg-red-gradient -z-10"></div>
-      
       {/* Countdown Timer Header */}
       <CountdownTimer />
-
       {/* Hero Section */}
       <section className="py-16 text-center">
         <div className="container mx-auto px-4">
@@ -92,7 +90,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Featured Image Section */}
       <section className="py-12">
         <div className="container mx-auto px-4">
@@ -103,14 +100,13 @@ export default function Home() {
                 <img
                   src={featuredImage}
                   alt="Conteúdo exclusivo"
-                  className="w-full h-96 object-cover rounded-xl shadow-lg mx-auto"
+                  className="w-full h-96 object-cover rounded-xl shadow-lg mx-auto mt-[0px] mb-[0px] pl-[0px] pr-[0px] pt-[0px] pb-[0px]"
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Pricing Plans Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -146,7 +142,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Security and Trust Section */}
       <section className="py-12 border-t border-gray-700/50">
         <div className="container mx-auto px-4">
@@ -166,7 +161,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-8 text-center text-gray-400 text-sm border-t border-gray-800">
         <div className="container mx-auto px-4">
