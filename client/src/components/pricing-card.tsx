@@ -46,7 +46,7 @@ export function PricingCard({
       case 'intermediate':
         return "bg-orange-600 hover:bg-orange-500 text-white shadow-lg";
       case 'vip':
-        return "bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white shadow-lg animate-pulse";
+        return "bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white shadow-lg";
       default:
         return "bg-gray-700 hover:bg-gray-600 text-white";
     }
