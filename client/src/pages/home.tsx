@@ -91,7 +91,7 @@ export default function Home() {
               <p className="text-xl text-gray-300">
                 😈 Conteúdo <span className="text-red-400 font-bold">sem limites</span> e <span className="text-yellow-400 font-bold">totalmente liberado</span> 😈
               </p>
-              <p className="text-lg text-[d1d5db]">
+              <p className="text-lg text-[#d1d5db] ml-[0px] mr-[0px]">
                 💋 Entre agora e descubra por que milhares estão viciados... 💋
               </p>
             </div>
