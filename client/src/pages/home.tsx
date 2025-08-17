@@ -1,13 +1,9 @@
-import { useState } from "react";
 import { Flame, Shield, Lock, Smartphone } from "lucide-react";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { PricingCard } from "@/components/pricing-card";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import featuredImage from "@assets/GLNQ9zTXIAA2_y3.jpg";
 
 export default function Home() {
-  const { toast } = useToast();
 
   const handlePurchase = (plan: string, redirectUrl: string) => {
     // Redirect to the payment page
