@@ -83,7 +83,7 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
                 Essa é a sua <span className="text-yellow-400 font-bold">única oportunidade</span> de entrar direto e sem censura. Essa condição não vai aparecer de novo.
               </p>
-              <p className="text-lg text-[d1d5db]">
+              <p className="text-lg text-[#d1d5db]">
                 Tudo liberado agora por um <span className="text-yellow-400 font-bold">valor simbólico.</span>
               </p>
             </div>
