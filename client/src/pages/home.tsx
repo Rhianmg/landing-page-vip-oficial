@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Flame, Shield, Lock, Smartphone } from "lucide-react";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { PricingCard } from "@/components/pricing-card";
-import { ImageUpload } from "@/components/image-upload";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import featuredImage from "@assets/GE5A23UX0AE7JNw_1755393526704.jpg";
 
 export default function Home() {
   const { toast } = useToast();
@@ -78,7 +78,7 @@ export default function Home() {
               Última Chance: Desbloqueie o Acesso VIP 
               <span className="text-yellow-400"> com Ela por Apenas</span>
             </h1>
-            <div className="text-4xl md:text-6xl font-extrabold text-yellow-400 mb-6">
+            <div className="text-6xl md:text-8xl font-extrabold text-yellow-400 mb-6">
               R$9,90!
             </div>
             <p className="text-xl md:text-2xl text-gray-300 mb-4">
@@ -91,8 +91,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Upload Section */}
-      <ImageUpload />
+      {/* Featured Image Section */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="relative bg-gradient-to-r from-yellow-600/20 to-red-600/20 p-6 rounded-2xl border-2 border-yellow-400/50 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/10 to-red-400/10 rounded-2xl blur-sm"></div>
+              <div className="relative">
+                <img
+                  src={featuredImage}
+                  alt="Conteúdo exclusivo"
+                  className="w-full h-96 object-cover rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Pricing Plans Section */}
       <section className="py-12">
