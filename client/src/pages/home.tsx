@@ -9,29 +9,9 @@ import featuredImage from "@assets/GLNQ9zTXIAA2_y3.jpg";
 export default function Home() {
   const { toast } = useToast();
 
-  const handlePurchase = async (plan: string, price: string) => {
-    try {
-      // For demo purposes, we'll use a placeholder email
-      // In a real app, this would come from a form or user session
-      const email = `user-${Date.now()}@example.com`;
-      
-      await apiRequest('POST', '/api/purchase', {
-        email,
-        plan,
-        price
-      });
-
-      toast({
-        title: "Compra realizada com sucesso!",
-        description: `Plano ${plan} adquirido por ${price}. Você receberá um email com as instruções.`,
-      });
-    } catch (error) {
-      toast({
-        title: "Erro na compra",
-        description: "Não foi possível processar sua compra. Tente novamente.",
-        variant: "destructive",
-      });
-    }
+  const handlePurchase = (plan: string, redirectUrl: string) => {
+    // Redirect to the payment page
+    window.open(redirectUrl, '_blank');
   };
 
   const basicFeatures = [
@@ -117,7 +97,7 @@ export default function Home() {
               price="R$9,90"
               features={basicFeatures}
               buttonText="Quero o acesso básico"
-              onPurchase={() => handlePurchase("Espadinha", "R$9,90")}
+              onPurchase={() => handlePurchase("Espadinha", "https://pagfacil.online/checkout/cmeeutc1t060nn1qwqwmioo1g?offer=110ABFD")}
             />
             
             <PricingCard
@@ -126,7 +106,7 @@ export default function Home() {
               price="R$14,90"
               features={intermediateFeatures}
               buttonText="Quero o plano completo"
-              onPurchase={() => handlePurchase("Flerte Quente", "R$14,90")}
+              onPurchase={() => handlePurchase("Flerte Quente", "https://pagfacil.online/checkout/cmeeutqtn064ygdsdh9lgyqx7?offer=IAMXU85")}
             />
             
             <PricingCard
@@ -137,7 +117,7 @@ export default function Home() {
               features={vipFeatures}
               buttonText="QUERO O PROIBIDO AGORA!"
               isPopular={true}
-              onPurchase={() => handlePurchase("Proibido", "R$19,90")}
+              onPurchase={() => handlePurchase("Proibido", "https://pagfacil.online/checkout/cmeeuu4dl05v658qc5bdqaxml?offer=JXQK71D")}
             />
           </div>
         </div>
