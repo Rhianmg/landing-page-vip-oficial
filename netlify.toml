@@ -1,12 +1,16 @@
 [build]
-  base = "."
+  base = /opt/build/repo
   publish = "dist"
   command = "vite build"
+commandOrigin: config
+
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = publish: /opt/build/repo/dist 
+publishOrigin: config
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+ redirectsOrigin: config
