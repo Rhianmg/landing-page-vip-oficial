@@ -23,9 +23,12 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  // Remover ou alterar a linha root para a raiz do projeto
+  root: path.resolve(import.meta.dirname), // ou apenas comentar a linha
+
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    // Configuração do diretório de saída para o Vite
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
